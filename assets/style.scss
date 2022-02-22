@@ -12,6 +12,10 @@ html{
     font-size: 10px;
     scroll-behavior: smooth;
 }
+body{
+    width: 100%;
+    height: 100vh;
+}
 // class container
 .container{
     min-height: 100vh;
@@ -54,7 +58,7 @@ html{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 1;
+        z-index: -1;
         overflow-x: hidden;
         transition: 0.8s ease left;
         &.active{
@@ -85,13 +89,15 @@ html{
                 width: 100%;
                 height: auto;
                 position: absolute;
-                top: 100%;
+                background-color: rgba(31, 30, 30, 0.9);
+                top: 90%;
                 left: 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 padding: 0;
+                z-index: 1;
                 transition-delay: 0.7s;
                 & li{
                     list-style: none;
@@ -118,7 +124,7 @@ html{
                         }
                     }
                   }
-            }
+                 }
             // overflow: hidden;
             & .submenu{
                 display: none;
@@ -195,16 +201,17 @@ main.active{
     #header .header .nav-bar .nav-burguer {
         display: none;
     }
+    #header .header .nav-bar .nav-list {
+        position: relative;
+    }
     #header .header .nav-bar .nav-list ul{
         background-color: transparent;
-        // height: auto;
-        // width: fit-content;
-        // position: relative;
         left: 15%;
         position: relative;
         flex-direction: row;
         width: 100%;
         height: 100%;
+        z-index: 1;
 
     & li{
         display: inline-block;
@@ -223,7 +230,25 @@ main.active{
             transform: scale(1.05);
             
         }
-    }
-    }
         }
+        }
+    & .sub-container{
+        position: relative;
+        & .submenu{
+          display: none;  
+        }
+        &:hover .submenu{
+            position: absolute;
+            left: 0;
+            top: 90%;
+            width: 100%;
+            background-color: transparent;
+            // display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    }
 }
