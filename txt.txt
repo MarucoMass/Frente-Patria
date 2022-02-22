@@ -1,0 +1,7 @@
+-menu position fixed y bajar opacidad cuando scrollea
+-submenu para info estudiantil
+-menu active color gris oscuro
+-sitio entero de una pagina
+-img para el home de base
+-collapse para ayudantias
+-menu active opacidad baja y burger menu blanco
