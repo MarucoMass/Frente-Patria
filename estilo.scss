@@ -271,14 +271,14 @@ body{
        }
        }
        & #mesas{
-           background-color: $bg-1;
+        //    background-color: $bg-1;
            position: relative;
-           background-image: url("/img/mesas.jpg");
+           background-image: url(./img/mesas.jpg);
                background-size: cover;
                background-position: top center;
            &::after{
                content: '';
-               opacity: .6;
+               opacity: .4;
                display: block;
                width: 100%;
                height: 100%;
@@ -289,37 +289,38 @@ body{
            }
        }
        & #formularios{
-           background-color: $bg-2;
+           background-image: url(./img/FORMULARIOS.jpg);
+           background-size: cover;
+           background-position: top center;
            position: relative;
            &::after{
             content: '';
-            opacity: .6;
+            background-color: $bg-2;
+            opacity: .4;
             display: block;
             width: 100%;
             height: 100%;
             position: absolute;
             left: 0;
             top: 0;
-            background-image: url("/img/FORMULARIOS.jpg");
-            background-size: cover;
-            background-position: top center;
+            
         }
        }
        & #propuestas{
-           background-color: $bg-3;
            position: relative;
+           background-image: url(./img/PROPUESTAS.jpg);
+           background-size: cover;
+           background-position: top right;
            &::after{
+            background-color: $bg-3;
             content: '';
-            opacity: .6;
+            opacity: .5;
             display: block;
             width: 100%;
             height: 100%;
             position: absolute;
             left: 0;
             top: 0;
-            background-image: url("/img/PROPUESTAS.jpg");
-            background-size: cover;
-            background-position: top right;
         }
        }
     }
