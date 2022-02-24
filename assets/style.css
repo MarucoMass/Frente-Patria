@@ -379,8 +379,9 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url(/img/mesas.jpg);
+  background-image: url("/mesas.jpg");
   background-size: cover;
+  background-position: top center;
 }
 
 #home .home #formularios {
@@ -397,8 +398,9 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url(/img/FORMULARIOS.jpg);
+  background-image: url("/FORMULARIOS.jpg");
   background-size: cover;
+  background-position: top center;
 }
 
 #home .home #propuestas {
@@ -415,8 +417,9 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url(/img/PROPUESTAS.jpg);
+  background-image: url("/PROPUESTAS.jpg");
   background-size: cover;
+  background-position: top right;
 }
 
 @media (min-width: 1201px) {
