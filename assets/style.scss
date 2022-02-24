@@ -232,7 +232,7 @@ body{
             align-items: center;
             justify-content: center;
             opacity: .25;
-            cursor: pointer;
+            // cursor: pointer;
             transition: 0.3s;
             &:hover{
                 opacity: .7;
@@ -240,9 +240,10 @@ body{
             }
         }& #rightBtn{
             @extend #leftBtn;
-            &:hover{
-                @extend #leftBtn;
-            }
+            // &:hover{
+            //     opacity: .7;
+            //     transition: 0.3s;
+            // }
         }
     }
     & .home{
@@ -284,7 +285,7 @@ body{
                position: absolute;
                left: 0;
                top: 0;
-               background-image: url("/img/MESAS\ EXAMINADORAS.jpg");
+               background-image: url("/img/mesas.jpg");
                background-size: cover;
            }
        }

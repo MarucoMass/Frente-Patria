@@ -299,7 +299,7 @@ body {
           align-items: center;
 }
 
-#home #boxBotones #leftBtn, #home #boxBotones #rightBtn, #home #boxBotones #rightBtn:hover {
+#home #boxBotones #leftBtn, #home #boxBotones #rightBtn {
   font-size: 3rem;
   color: white;
   border-radius: 10%;
@@ -316,7 +316,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   opacity: .25;
-  cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -379,7 +378,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url("/img/MESAS EXAMINADORAS.jpg");
+  background-image: url("/img/mesas.jpg");
   background-size: cover;
 }
 

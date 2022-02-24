@@ -24,6 +24,11 @@ hamburguer.addEventListener('click', ()=>{
 // fin slider
 
 // home
+eventListenersHome();
+function eventListenersHome(){
+    btnRightHome.addEventListener('click', next)
+    btnLeftHome.addEventListener('click', prev)
+}
 homeBox.insertAdjacentElement('afterbegin', homeLast)
 
 function next() {
@@ -47,8 +52,6 @@ function prev() {
     homeBox.style.marginLeft = '-100vw'
     }, 500)
 }
-btnRightHome.addEventListener('click', next)
-btnLeftHome.addEventListener('click', prev)
 
 setInterval(() => {
     next();
