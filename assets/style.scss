@@ -273,7 +273,7 @@ body{
        & #mesas{
            background-color: $bg-1;
            position: relative;
-           &::after{
+           &::before{
                content: '';
                opacity: .6;
                display: block;

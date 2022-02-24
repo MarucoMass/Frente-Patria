@@ -370,7 +370,7 @@ body {
   position: relative;
 }
 
-#home .home #mesas::after {
+#home .home #mesas::before {
   content: '';
   opacity: .6;
   display: block;
