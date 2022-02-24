@@ -220,6 +220,7 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 2;
         // max-width: 500px;
         & #leftBtn{
             font-size: 3rem;
@@ -240,10 +241,6 @@ body{
             }
         }& #rightBtn{
             @extend #leftBtn;
-            // &:hover{
-            //     opacity: .7;
-            //     transition: 0.3s;
-            // }
         }
     }
     & .home{
