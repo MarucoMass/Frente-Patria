@@ -17,7 +17,7 @@ body {
   height: 100vh;
 }
 
-.container {
+.containerro {
   min-height: 100vh;
   width: 100%;
   display: -webkit-box;
@@ -41,6 +41,7 @@ body {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background-color: white;
   padding: 5px 0;
+  z-index: 1000;
 }
 
 #header .header {
@@ -69,7 +70,7 @@ body {
 
 #header .header .nav-bar .nav-list ul {
   position: absolute;
-  background-color: rgba(31, 30, 30, 0.8);
+  background-color: rgba(31, 30, 30, 0.9);
   width: 100vw;
   height: 100vh;
   left: 100%;
@@ -87,7 +88,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: -1;
+  z-index: 1;
   overflow-x: hidden;
   -webkit-transition: 0.8s ease left;
   transition: 0.8s ease left;
@@ -105,6 +106,7 @@ body {
 
 #header .header .nav-bar .nav-list ul li a {
   font-size: 1.7rem;
+  font-weight: 600;
   color: lightblue;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -224,7 +226,7 @@ body {
   width: 15px;
   background-color: #1f1e1e;
   position: relative;
-  z-index: -1;
+  z-index: 2;
   -webkit-transition: 0.9s;
   transition: 0.9s;
 }
@@ -256,17 +258,165 @@ body {
   bottom: 8px;
 }
 
-#header .header .nav-bar.active .bar::after {
+#header .header .nav-bar .nav-burguer .bar.active::after {
   top: 0;
+  background-color: white;
 }
 
-#header .header .nav-bar.active .bar::before {
+#header .header .nav-bar .nav-burguer .bar.active::before {
   bottom: 0;
 }
 
-main.active {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+#boxTrucho {
+  min-height: 76.65px;
+  padding: 5px 0;
+  width: 100%;
+}
+
+#home {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#home #boxBotones {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home #boxBotones #leftBtn, #home #boxBotones #rightBtn, #home #boxBotones #rightBtn:hover {
+  font-size: 3rem;
+  color: white;
+  border-radius: 10%;
+  width: 25px;
+  padding: 0 15px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: .25;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#home #boxBotones #leftBtn:hover, #home #boxBotones #rightBtn:hover {
+  opacity: .7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#home .home {
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 300vw;
+  margin-left: -100vw;
+}
+
+#home .home_boxes {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .home_boxes_title {
+  z-index: 2;
+}
+
+#home .home_boxes_title h2 {
+  display: inline-block;
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 6rem;
+}
+
+#home .home #mesas {
+  background-color: #4331C2;
+  position: relative;
+}
+
+#home .home #mesas::after {
+  content: '';
+  opacity: .6;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("/img/MESAS EXAMINADORAS.jpg");
+  background-size: cover;
+}
+
+#home .home #formularios {
+  background-color: #523DF2;
+  position: relative;
+}
+
+#home .home #formularios::after {
+  content: '';
+  opacity: .6;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("/img/FORMULARIOS.jpg");
+  background-size: cover;
+}
+
+#home .home #propuestas {
+  background-color: #666579;
+  position: relative;
+}
+
+#home .home #propuestas::after {
+  content: '';
+  opacity: .6;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("/img/PROPUESTAS.jpg");
+  background-size: cover;
 }
 
 @media (min-width: 1201px) {
@@ -333,6 +483,10 @@ main.active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #home #boxBotones {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 /*# sourceMappingURL=style.css.map */

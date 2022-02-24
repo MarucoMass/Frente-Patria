@@ -1,5 +1,8 @@
 $bg-header: rgb(255, 255, 255);
 // $bg-header: rgb(75, 72, 72);
+$bg-1: #4331C2;
+$bg-2: #523DF2;
+$bg-3: #666579;
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
@@ -17,7 +20,7 @@ body{
     height: 100vh;
 }
 // class container
-.container{
+.containerro{
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -34,6 +37,7 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-color: $bg-header;
     padding: 5px 0;
+    z-index: 1000;
     & .header{
         min-height: 8vh;
         & .nav-bar{
@@ -49,7 +53,7 @@ body{
     }
     & .nav-list ul{
         position: absolute;
-        background-color: rgba(31, 30, 30, 0.8);
+        background-color: rgba(31, 30, 30, 0.9);
         width: 100vw;
         height: 100vh;
         left: 100%;
@@ -58,7 +62,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: -1;
+        z-index: 1;
         overflow-x: hidden;
         transition: 0.8s ease left;
         &.active{
@@ -71,6 +75,7 @@ body{
         
         & a{
             font-size: 1.7rem;
+            font-weight: 600;
             color: lightblue;
             transition: 0.4s;
             display: block;
@@ -156,11 +161,12 @@ body{
             width: 15px;    
             background-color: rgb(31, 30, 30);
             position: relative;
-            z-index: -1;
+            z-index: 2;
             transition: 0.9s;
             &.active{
                 background-color: white;
                 transition: 0.7s;
+                
                 }
             &::after,
             &::before{
@@ -179,23 +185,153 @@ body{
             &::before{
             bottom: 8px;
             }
+            &.active::after{ 
+               top: 0;
+               background-color: white;
+            }
+           &.active::before{
+           bottom: 0;
+           }
                   }    
                     }
-         &.active .bar::after{
-            top: 0;
-         }
-        &.active .bar::before{
-        bottom: 0;
-        }
     }
   }
 }
 // fin header
-// main
-main.active{
-    filter: blur(2px);
+#boxTrucho{
+    min-height: 76.65px;
+    padding: 5px 0;
+    width: 100%;
 }
-// fin main
+// home
+#home{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    & #boxBotones{
+        // margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // max-width: 500px;
+        & #leftBtn{
+            font-size: 3rem;
+            color: white;
+            border-radius: 10%;
+            width: 25px;
+            padding: 0 15px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: .25;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover{
+                opacity: .7;
+                transition: 0.3s;
+            }
+        }& #rightBtn{
+            @extend #leftBtn;
+            &:hover{
+                @extend #leftBtn;
+            }
+        }
+    }
+    & .home{
+        // margin-top: 8vh;
+        position: relative;
+        // overflow: hidden;
+        flex-direction: row;
+        width: 300vw;
+        margin-left: -100vw;
+        &_boxes{
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       &_title{
+           z-index: 2;
+        //    max-width: 400px;
+           & h2{
+               display: inline-block;
+               color: white;
+               font-size: 3rem;
+               font-weight: 600;
+               text-transform: uppercase;
+               text-align: center;
+               line-height: 6rem;
+           }
+       }
+       }
+       & #mesas{
+           background-color: $bg-1;
+           position: relative;
+           &::after{
+               content: '';
+               opacity: .6;
+               display: block;
+               width: 100%;
+               height: 100%;
+               position: absolute;
+               left: 0;
+               top: 0;
+               background-image: url("/img/MESAS\ EXAMINADORAS.jpg");
+               background-size: cover;
+           }
+       }
+       & #formularios{
+           background-color: $bg-2;
+           position: relative;
+           &::after{
+            content: '';
+            opacity: .6;
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url("/img/FORMULARIOS.jpg");
+            background-size: cover;
+        }
+       }
+       & #propuestas{
+           background-color: $bg-3;
+           position: relative;
+           &::after{
+            content: '';
+            opacity: .6;
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url("/img/PROPUESTAS.jpg");
+            background-size: cover;
+        }
+       }
+    }
+  }
+
+// fin home
+
+
+
+
+
+
+
+
 // media queries
 @media (min-width: 1201px) {
     #header .header .nav-bar .nav-burguer {
@@ -227,11 +363,8 @@ main.active{
         &:hover{
             color: blue;
             transition: 0.5s;
-            transform: scale(1.05);
-            
-        }
-        }
-        }
+            transform: scale(1.05);    
+        }}}
     & .sub-container{
         position: relative;
         & .submenu{
@@ -248,7 +381,9 @@ main.active{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
+        }}
     }
+    #home #boxBotones{
+        justify-content: space-around;
     }
 }
