@@ -370,7 +370,7 @@ body {
   position: relative;
 }
 
-#home .home #mesas::before {
+#home .home #mesas::after {
   content: '';
   opacity: .6;
   display: block;
@@ -379,7 +379,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url("/img/mesas.jpg");
+  background-image: url(/img/mesas.jpg);
   background-size: cover;
 }
 
@@ -397,7 +397,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url("/img/FORMULARIOS.jpg");
+  background-image: url(/img/FORMULARIOS.jpg);
   background-size: cover;
 }
 
@@ -415,7 +415,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url("/img/PROPUESTAS.jpg");
+  background-image: url(/img/PROPUESTAS.jpg);
   background-size: cover;
 }
 
