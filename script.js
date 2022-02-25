@@ -55,7 +55,7 @@ function prev() {
 
 setInterval(() => {
     next();
-}, 5000);
+}, 7000);
 // fin home
 
 
