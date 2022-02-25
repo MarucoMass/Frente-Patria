@@ -234,11 +234,11 @@ body{
             display: flex;
             align-items: center;
             justify-content: center;
-            opacity: .35;
+            opacity: .5;
             // cursor: pointer;
             transition: 0.3s;
             &:hover{
-                opacity: .7;
+                opacity: .9;
                 transition: 0.3s;
             }
         }& #rightBtn{
@@ -260,7 +260,7 @@ body{
         align-items: center;
        &_title{
            z-index: 2;
-           max-width: 350px;
+        //    max-width: 300px;
         //    max-width: 400px;
            & h2{
                display: inline-block;

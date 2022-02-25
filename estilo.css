@@ -317,13 +317,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: .35;
+  opacity: .5;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 #home #boxBotones #leftBtn:hover, #home #boxBotones #rightBtn:hover {
-  opacity: .7;
+  opacity: .9;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -354,7 +354,6 @@ body {
 
 #home .home_boxes_title {
   z-index: 2;
-  max-width: 350px;
 }
 
 #home .home_boxes_title h2 {
