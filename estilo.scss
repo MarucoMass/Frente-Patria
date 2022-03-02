@@ -235,7 +235,7 @@ body{
             align-items: center;
             justify-content: center;
             opacity: .5;
-            // cursor: pointer;
+            cursor: pointer;
             transition: 0.3s;
             &:hover{
                 opacity: .9;
@@ -331,7 +331,130 @@ body{
   }
 
 // fin home
-
+// biblioteca
+#biblioteca{
+    width: 100%;
+    background-color: $bg-3;
+    &_title{
+        width: 300px;
+        margin: 0 auto;
+        padding: 33px 0;
+        & h2{
+            display: inline-block;
+            color: white;
+            font-size: 3rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 6rem;
+            text-shadow: 1px 1px 5px black;
+        }
+    }
+& .biblioteca{
+    margin: 0 auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    &_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 30px 10px;
+    position: relative;
+    &--title{
+    width: 100%;
+    text-align: center;
+    color: $bg-header;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 5px black;
+    // line-height: 6rem;
+    }
+    &_single{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: $bg-header;
+    margin-bottom: 15px;
+    // z-index: 1000;
+    border-radius: 2.5px;
+    &--title{
+        padding: 18px;
+        padding-right: 25px;
+        // border: 1px solid black;
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: black;
+        text-align: left;
+        width: 100%;
+        position: relative;
+        box-shadow: inset -10px -5px 25px rgba(0, 0, 0, 0.2);
+        &::before{
+            position: absolute;
+            content: '+';
+            top: 50%;
+            transform: translateY(-50%);
+            right: 4px;
+            font-size: 4.5rem;
+            font-weight: 400;
+            color: $bg-2;
+            transition: 0.5s;
+            cursor: pointer;
+            }
+            // &.active::before{
+            //     content: '-';
+            //     color: rgb(194, 23, 23);
+            //     transition: 0.5s;
+            //     font-size: 8rem;
+            // }
+            // &.active .biblioteca_box_single--content{
+            //     height: 100px;
+            // }
+    }
+    &--content{
+    position: relative;
+    background-color: $bg-header;
+    width: 100%;
+    // text-align: center;
+    overflow: hidden;
+    height: 0px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    & a{
+        color: $bg-2;
+        font-size: 1.8rem;
+        font-weight: 700;
+        transition: all 0.3s ease-in-out;
+        // position: absolute;
+        // top: 50%;
+        // transform: translateY(-50%);
+        // right: 45%;
+        }
+    }
+    &.active .biblioteca_box_single--title::before{
+        content: '-';
+        color: rgb(194, 23, 23);
+        transition: all 0.3s ease;
+    }
+    &.active .biblioteca_box_single--content{
+        height: 55px;
+        transition: all 0.3s ease-in-out;
+    }
+    }
+    }
+}
+}
+//fin biblioteca
 
 
 
