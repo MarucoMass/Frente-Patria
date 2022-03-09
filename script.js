@@ -3,7 +3,8 @@ const hamburguer = document.querySelector('.header .nav-bar .nav-burguer');
 const burguer = document.querySelector('.header .nav-bar .nav-burguer .bar');
 const mobile = document.querySelector('.header .nav-bar .nav-list ul');
 const divMobile = document.querySelector('.header .nav-bar .nav-list');
-const item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+// const item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+const item = document.querySelectorAll('.item');
 const menu = document.querySelector('li .sub-container a');
 const subMenu = document.getElementsByClassName('submenu');
 
@@ -17,7 +18,7 @@ hamburguer.addEventListener('click', ()=>{
     // header.classList.toggle("active");
 })
 
-item.forEach(selectItem => selectItem.addEventListener("click", ()=>{
+item.forEach(selectItem => selectItem.addEventListener('click', ()=>{
     if ((mobile.classList = 'active') || (hamburguer.classList = 'active') || (burguer.classList = 'active')) {
         hamburguer.classList.toggle('active');
         mobile.classList.toggle('active');     
