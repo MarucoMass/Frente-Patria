@@ -89,6 +89,7 @@ let newArray
 let selectMateria = document.getElementById('selectMateria')
 let selectCatedra = document.getElementById('selectCatedra')
 let selectContacto = document.getElementById('selectContacto')
+let optionCatedra = document.getElementById('optionCatedra')
 
 arrayMaterias.forEach((value) => {
     selectMateria.innerHTML += `
@@ -98,14 +99,21 @@ arrayMaterias.forEach((value) => {
     selectMateria.addEventListener('click', (e) => {
         
         newArray = gente.filter((el) => el.id == e.target.value)
-        console.log(e.target)
-        if(e.target.value === 'Materia' || e.target.value === selectMateria.value){
-            selectCatedra.innerHTML = ''
-            for (const item of newArray) {
-                selectCatedra.innerHTML += `
-                <option class="" value="${item.id}">Cátedra ${item.catedra} -> Ayudante: ${item.nombre}</option>
-                `
-            }
+        if( e.target.value == selectMateria.value){
+            selectCatedra.innerHTML = `<option value="Catedra" id="optionCatedra">Cátedra:</option>`
+            // for (const item of newArray) {
+                //     selectCatedra.innerHTML += `
+                //     <option class="" value="${item.id}">Cátedra ${item.catedra} -> Ayudante: ${item.nombre}</option>
+                //     `
+                // }
+                newArray.forEach((value) => {
+                    selectCatedra.innerHTML += `
+                    <option class="" value="${value.id}">Cátedra ${value.catedra} -> Ayudante: ${value.nombre}</option>
+                    `
+                })
+                if (e.target.value == 'Materia') {
+                    selectCatedra.innerHTML = ''
+                }
         }
         
 
