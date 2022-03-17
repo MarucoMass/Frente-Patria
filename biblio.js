@@ -5,10 +5,10 @@ const title= document.querySelectorAll('.biblioteca_box_single--title')
 
 title.forEach((cadaTitle, i) => {
     title[i].addEventListener('click', () => {
-        // accordion.forEach((cadaAcordion, i) => {       
-        //     // accordion[i].classList.remove('active')
-        // })
-            accordion[i].classList.toggle('active')
+        accordion.forEach((cadaAcordion, i) => {       
+            accordion[i].classList.remove('active')
+        })
+            accordion[i].classList.add('active')
     })
 })
 

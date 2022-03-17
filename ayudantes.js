@@ -90,32 +90,48 @@ let selectMateria = document.getElementById('selectMateria')
 let selectCatedra = document.getElementById('selectCatedra')
 let selectContacto = document.getElementById('selectContacto')
 let optionCatedra = document.getElementById('optionCatedra')
-
+const nombres = document.querySelector('.nombres')
 arrayMaterias.forEach((value) => {
     selectMateria.innerHTML += `
     <option value="${value.id}">${value.materia}</option>
     `
 })
-    selectMateria.addEventListener('click', (e) => {
+   const cargarCat = () => { 
+       selectMateria.addEventListener('click', (e) => {
         
         newArray = gente.filter((el) => el.id == e.target.value)
         if( e.target.value == selectMateria.value){
             selectCatedra.innerHTML = `<option value="Catedra" id="optionCatedra">Cátedra:</option>`
-            // for (const item of newArray) {
-                //     selectCatedra.innerHTML += `
-                //     <option class="" value="${item.id}">Cátedra ${item.catedra} -> Ayudante: ${item.nombre}</option>
-                //     `
-                // }
                 newArray.forEach((value) => {
                     selectCatedra.innerHTML += `
-                    <option class="" value="${value.id}">Cátedra ${value.catedra} -> Ayudante: ${value.nombre}</option>
+                    <option class="optionCatedra" value="${value.nombre}">Cátedra ${value.catedra} -> Ayudante: ${value.nombre}</option>
                     `
                 })
                 if (e.target.value == 'Materia') {
                     selectCatedra.innerHTML = ''
+                    nombres.innerHTML = ''
+                    nombres.classList.remove('active')
                 }
-        }
-        
+                cargarNombres()
+            }
+        })
+    }
+     const cargarNombres = () => {
+        selectCatedra.addEventListener('click', (e) => {
+            let nombre = newArray.filter((el) => el.nombre == e.target.value)
+            for (const item of nombre) {
+                nombres.innerHTML = `
+                <p class="datos">Nombre: <span id="nombre">${item.nombre}</span></p><br>
+                <p class="datos" id="celular">Celular: ${item.celular}</p><Br>
+                <p class="datos" id="ig">Ig: ${item.ig}</p><Br>
+            `    
+            }
+            nombres.classList.add('active')
 
-    })
-
+            if (e.target.value == 'Catedra' || selectCatedra.innerHTML == '') {
+                nombres.innerHTML = ''
+                nombres.classList.remove('active')
+            }
+        })
+     }
+    cargarCat()
