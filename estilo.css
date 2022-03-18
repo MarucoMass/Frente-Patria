@@ -381,7 +381,7 @@ body {
 #biblioteca {
   width: 100%;
   background-color: #0455BF;
-  padding: 50px 0;
+  padding: 60px 0;
   position: relative;
   background-image: url(./img/biblio.png);
   background-size: cover;
@@ -1284,6 +1284,112 @@ body {
   height: auto;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+#footer {
+  background-color: #011C40;
+  color: white;
+  width: 100%;
+}
+
+#footer .footer {
+  min-height: 30vh;
+  max-width: 1200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+#footer .footer .redes {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+#footer .footer .redes_box {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  margin: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#footer .footer .redes_box img {
+  width: 100%;
+  height: 100%;
+}
+
+#footer .footer h4 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+#footer .footer .sponsors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+#footer .footer .sponsors_box {
+  width: 90px;
+  height: 60px;
+  margin: 10px;
+}
+
+#footer .footer .sponsors_box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+#footer p {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1200px) {
