@@ -302,7 +302,7 @@ body{
 #biblioteca{
     width: 100%;
     background-color: $bg-blue;
-    padding: 80px 0;
+    padding: 50px 0;
     position: relative;
     background-image: url(./img/biblio.png);
     background-size: cover;
@@ -460,7 +460,7 @@ body{
     background-image: url(./img/videoteca.png);
     background-size: cover;
     background-position-x: 22%;
-    padding: 40px 0;
+    padding: 0px 0 10px 0;
     & .videoteca{
         width: 100%;
         // max-width: 1200px;
@@ -618,16 +618,13 @@ body{
 // ayudantes
 #ayudantes{
     width: 100%;
-    // background-color: $bg-pink;
-    padding: 40px 0;
+    padding: 20px 0;
     background-image: url(./img/ayudantes.png);
     background-size: cover;
    & .ayudantes{
     flex-direction: column;
     justify-content: flex-start;   
     align-items: center;
-    // margin: 0 auto;
-    // max-width: 1200px;
     max-width: 1200px;
     margin: 10px auto;
     padding: 33px 0;
@@ -703,7 +700,7 @@ body{
 // fotocopiadora
 #fotocopiadora{
     width: 100%;
-    padding: 40px 0;
+    padding: 20px 0;
     background-image: url(./img/FOTOCOP-vertical.png);
     background-position-x: 55%;
     background-size: cover;

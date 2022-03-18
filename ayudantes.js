@@ -91,16 +91,21 @@ let selectCatedra = document.getElementById('selectCatedra')
 let selectContacto = document.getElementById('selectContacto')
 let optionCatedra = document.getElementById('optionCatedra')
 const nombres = document.querySelector('.nombres')
+
+
+const cargarMaterias = () => { 
 arrayMaterias.forEach((value) => {
     selectMateria.innerHTML += `
-    <option value="${value.id}">${value.materia}</option>
+    <option class="optionMateria" value="${value.id}">${value.materia}</option>
     `
 })
-   const cargarCat = () => { 
+}
+   const cargarCatedras = () => {  
        selectMateria.addEventListener('click', (e) => {
         
-        newArray = gente.filter((el) => el.id == e.target.value)
-        if( e.target.value == selectMateria.value){
+           newArray = gente.filter((el) => el.id == e.target.value)
+      
+        if(e.target.value == selectMateria.value){
             selectCatedra.innerHTML = `<option value="Catedra" id="optionCatedra">Cátedra:</option>`
                 newArray.forEach((value) => {
                     selectCatedra.innerHTML += `
@@ -134,4 +139,10 @@ arrayMaterias.forEach((value) => {
             }
         })
      }
-    cargarCat()
+
+
+    
+
+
+    cargarMaterias()
+    cargarCatedras()

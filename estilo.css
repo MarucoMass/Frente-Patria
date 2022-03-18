@@ -381,7 +381,7 @@ body {
 #biblioteca {
   width: 100%;
   background-color: #0455BF;
-  padding: 80px 0;
+  padding: 50px 0;
   position: relative;
   background-image: url(./img/biblio.png);
   background-size: cover;
@@ -597,7 +597,7 @@ body {
   background-image: url(./img/videoteca.png);
   background-size: cover;
   background-position-x: 22%;
-  padding: 40px 0;
+  padding: 0px 0 10px 0;
 }
 
 #videoteca .videoteca {
@@ -831,7 +831,7 @@ body {
 
 #ayudantes {
   width: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
   background-image: url(./img/ayudantes.png);
   background-size: cover;
 }
@@ -944,7 +944,7 @@ body {
 
 #fotocopiadora {
   width: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
   background-image: url(./img/FOTOCOP-vertical.png);
   background-position-x: 55%;
   background-size: cover;

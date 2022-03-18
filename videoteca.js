@@ -41,7 +41,9 @@ const closeVideo = document.querySelector('.videos_closed')
 const videosUl = document.querySelector('.videosUl')
 
 const cargarVideos = () => { 
-    btnVideoteca.forEach(btn => btn.addEventListener('click', (e) => {
+    btnVideoteca.forEach(btn => 
+    btn.addEventListener('click', (e) => {
+        
     let numero = e.target.parentElement.getAttribute("data-id")
     let videosElegidos = videos.filter(el => el.id == numero)
     videosUl.innerHTML = ''
@@ -59,15 +61,8 @@ const cargarVideos = () => {
         <li><a href=${url}>${nombre}</a></li>
         <hr>
         `
-        // if (id == 1 || id == 2 || id == 3 ) {
-        //     boxVideos.classList.remove('activeDos')  
-        //     boxVideos.classList.add('active')  
-        // }
-        
     })
-
     }))
-
 }
 closeVideo.addEventListener('click', () => {
     boxVideos.classList.remove('active')
