@@ -325,6 +325,7 @@ body{
         align-items: center;
         justify-content: center;
         padding: 40px 0;
+        // margin-bottom: 70px;
             & h2{
                 width: 100%;
                 display: inline-block;
@@ -460,7 +461,7 @@ body{
     background-image: url(./img/videoteca.png);
     background-size: cover;
     background-position-x: 22%;
-    padding: 0px 0 10px 0;
+    // padding: 0px 0 10px 0;
     & .videoteca{
         width: 100%;
         // max-width: 1200px;
@@ -475,8 +476,8 @@ body{
             // 
             max-width: 1200px;
             margin: 10px auto;
-            padding: 33px 0;
-            margin-top: 15px;
+            padding: 20px 0;
+            // margin-top: 15px;
             & h2{
                 display: inline-block;
                 color: white;
@@ -486,11 +487,11 @@ body{
                 text-align: center;
                 line-height: 3rem;
                 // padding: 33px 0 0 0;
-                padding: 33px;
+                padding: 30px;
                 margin-top: 15px;
             }
             & p{
-                // width: 100%;
+                width: 100%;
                 // margin: 0 auto;
                 font-size: 1.5rem;
                 font-weight: 500;
@@ -499,6 +500,7 @@ body{
                 padding: 0 5px;
                 color: white;
                 margin: 0 10px;
+                // width: 250px;
             }
         }
     &_contenedorBtn{
@@ -637,7 +639,7 @@ body{
             text-transform: uppercase;
             text-align: center;
             line-height: 3rem;
-            padding: 33px 0 0 0;
+            padding: 20px 0 0 0;
             margin-top: 15px;
             // text-shadow: 1px 1px 5px black;
             // margin-top: 50px;
@@ -675,7 +677,7 @@ body{
         & .nombres{
             visibility: hidden;
             &.active{
-                margin-top: 10px;
+                margin-top: 20px;
                 padding: 20px;
                 width: 70%;
                 height: auto;
@@ -721,8 +723,8 @@ body{
             // 
             max-width: 1200px;
         margin: 10px auto;
-        padding: 33px 0;
-        margin-top: 15px;
+        padding: 20px 0;
+        // margin-top: 15px;
             & h2{
                 display: inline-block;
                 color: white;
@@ -745,6 +747,7 @@ body{
                 padding: 0 5px;
                 color: white;
                 margin: 0 10px;
+                // max-width: 300px;
             }
         }
         &_content{
@@ -1001,24 +1004,24 @@ body{
         margin: 10px 0;
         text-transform: uppercase;
         }
-        & .sponsors{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 10px;
-        // max-width: 500px;
-        &_box{
-        width: 90px;
-        height: 60px;
-        margin: 10px;
-        & img{
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-        }
-        }
-        }
+        // & .sponsors{
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // flex-wrap: wrap;
+        // margin-bottom: 10px;
+        // // max-width: 500px;
+        // &_box{
+        // width: 90px;
+        // height: 60px;
+        // margin: 10px;
+        // & img{
+        // width: 100%;
+        // height: 100%;
+        // border-radius: 5px;
+        // }
+        // }
+        // }
     }   
     & p{
         text-align: center;
@@ -1120,6 +1123,7 @@ body{
     #videoteca .videoteca_titles p{
         font-size: 2rem;
         line-height: 2rem;
+        width: 35%;
     }
     #videoteca .videoteca_contenedorBtn {
         max-width: 400px;
