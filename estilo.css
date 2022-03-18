@@ -381,7 +381,7 @@ body {
 #biblioteca {
   width: 100%;
   background-color: #0455BF;
-  padding: 60px 0;
+  padding: 30px 0;
   position: relative;
   background-image: url(./img/biblio.png);
   background-size: cover;
@@ -421,7 +421,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 40px 0;
+  padding: 50px 0;
+  margin-top: 30px;
 }
 
 #biblioteca .biblioteca #biblioteca_title h2 {

@@ -302,7 +302,7 @@ body{
 #biblioteca{
     width: 100%;
     background-color: $bg-blue;
-    padding: 60px 0;
+    padding: 30px 0;
     position: relative;
     background-image: url(./img/biblio.png);
     background-size: cover;
@@ -324,8 +324,8 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 40px 0;
-        // margin-bottom: 70px;
+        padding: 50px 0;
+        margin-top: 30px;
             & h2{
                 width: 100%;
                 display: inline-block;
