@@ -340,11 +340,12 @@ body{
                 display: inline-block;
                 width: 100%;
                 color: white;
-                font-size: 2.5rem;
+                font-size: 1.5rem;
                 font-weight: 900;
                 text-transform: uppercase;
                 text-align: center;
-                line-height: 2.5rem;
+                line-height: 1.5rem;
+                margin-top: 10px;
             }
     }
     &_box{
@@ -464,7 +465,7 @@ body{
         width: 100%;
         // max-width: 1200px;
         flex-direction: column;
-        
+        position: relative;
         &_titles{
             width: 100%;
             display: flex;
@@ -523,11 +524,95 @@ body{
                 border: none;
                 width: 100%;
                 transition: 0.5s;
+                cursor: pointer;
                 // box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
             }
         }
     }
+    & .videos{
+        width: 290px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: white;
+        position: absolute;
+        // top: 30%;
+        visibility: hidden;
+        transition: 0.2s;
+        animation: popDown 0.5s ease-out 0s 1 normal none;
+        &_closed{
+            width: 0%;  
+            &::after{
+              content: 'x';
+              position: absolute;
+              top: 0;
+              right: 5px;
+              font-size: 3rem;
+              color: red;
+              cursor: pointer;
+            }
+        }
+        & .videosUl{
+            margin: 0 5px;
+            padding: 10px;
+            list-style: none;
+            width: 100%;
+            // width: 290px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            & hr{
+                color: white;
+                height: 1px;
+                font-weight: 700;
+                width: 90%;
+                margin: 5px 0;
+            }
+            & a{
+                text-decoration: none;
+                font-size: 2rem;
+                font-weight: 700;
+                // margin-top: 30px;
+                color: $bg-header;
+                // padding: 7px 0;
+                // margin: 10px 0;
+                cursor: pointer;
+                &:hover{
+                    color: $bg-blue;
+                }
+            }
+        }
+        &.active{
+        visibility: visible;
+        transition: 0.2s;
+        animation: popUp 0.5s ease-in 0s 1 normal none;
     }
+}
+}
+@keyframes popUp {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 100;
+        transform: scale(1);
+    }
+}
+@keyframes popDown {
+    from {
+        opacity: 100;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
 }
 // fin videoteca
 // ayudantes
@@ -735,6 +820,7 @@ body{
     background-image: url(./img/otro-fondo.png);
     background-size: cover;
     background-position-x: 3%;
+    overflow: hidden;
     &_title{
         max-width: 1200px;
         // width: 1000px;
