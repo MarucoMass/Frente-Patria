@@ -105,7 +105,7 @@ arrayMaterias.forEach((value) => {
         
            newArray = gente.filter((el) => el.id == e.target.value)
       
-        if(e.target.value == selectMateria.value){
+        // if(e.target.value == selectMateria.value){
             selectCatedra.innerHTML = `<option value="Catedra" id="optionCatedra">Cátedra:</option>`
                 newArray.forEach((value) => {
                     selectCatedra.innerHTML += `
@@ -116,7 +116,7 @@ arrayMaterias.forEach((value) => {
                     selectCatedra.innerHTML = ''
                     nombres.innerHTML = ''
                     nombres.classList.remove('active')
-                }
+                // }
                 cargarNombres()
             }
         })
