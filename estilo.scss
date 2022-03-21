@@ -224,8 +224,9 @@ body{
             text-transform: uppercase;
             text-align: center;
             line-height: 3rem;
-            margin: 0 5px;
+            margin: 0 25px;
             margin-bottom: 10px;
+            // width: 320px;
            }
        } 
        & a{
@@ -1047,8 +1048,11 @@ body{
     }
     #home .home .home_boxes .home_boxes_title h2{
         font-size: 6rem;
-        line-height: 6rem;
+        line-height: 6rem;  
     }
+    // .home .home_boxes_title h2{
+    //     width: 1200px;
+    // }
     // biblio
     #biblioteca .biblioteca #biblioteca_title{
         position: relative;
