@@ -197,7 +197,7 @@ body {
 }
 
 #boxTrucho {
-  min-height: 76.65px;
+  min-height: 71.21px;
   padding: 5px 0;
   width: 100%;
 }
@@ -299,6 +299,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   line-height: 3rem;
+  margin: 0 5px;
   margin-bottom: 10px;
 }
 
@@ -323,25 +324,25 @@ body {
 
 #home .home #mesas {
   position: relative;
-  background-image: url(./img/mesas.jpg);
+  background-image: url(./img/examenes.jpg);
   background-size: cover;
   background-position: top center;
 }
 
 #home .home #mesas::after {
   content: '';
-  opacity: .2;
+  opacity: .6;
   display: block;
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #0455BF;
+  background-color: #666579;
 }
 
 #home .home #formularios {
-  background-image: url(./img/FORMULARIOS.jpg);
+  background-image: url(./img/formularios.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -350,26 +351,26 @@ body {
 #home .home #formularios::after {
   content: '';
   background-color: #523DF2;
-  opacity: .2;
+  opacity: .6;
   display: block;
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
+  background-color: #666579;
 }
 
 #home .home #propuestas {
   position: relative;
-  background-image: url(./img/PROPUESTAS.jpg);
+  background-image: url(./img/Ingresantes.jpg);
   background-size: cover;
-  background-position: top right;
 }
 
 #home .home #propuestas::after {
   background-color: #666579;
   content: '';
-  opacity: .5;
+  opacity: .6;
   display: block;
   width: 100%;
   height: 100%;
@@ -676,7 +677,7 @@ body {
   padding: 10px;
 }
 
-#videoteca .videoteca_contenedorBtn--box a:hover img {
+#videoteca .videoteca_contenedorBtn--box:hover img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: scale(1.1);
@@ -1060,18 +1061,18 @@ body {
 }
 
 #fotocopiadora .fotocopiadora_content span h3 {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: 500;
   color: white;
-  padding: 10px 0;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 #fotocopiadora .fotocopiadora_content span a {
   text-decoration: none;
   font-size: 1.15rem;
   font-weight: 700;
+  color: #0455BF;
   background-color: white;
   padding: 7px;
   border-radius: 10px;
@@ -1089,12 +1090,17 @@ body {
   transition: 0.3s;
 }
 
+#fotocopiadora .fotocopiadora_content span .horario {
+  font-weight: 700;
+}
+
 #fotocopiadora .fotocopiadora_content span h4 {
-  font-size: 1.2rem;
-  line-height: 1.2rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 700;
   color: white;
-  margin-left: 5px;
+  padding: 10px 0;
+  margin-left: 10px;
 }
 
 #estudiantil {
@@ -1477,6 +1483,10 @@ body {
   }
   #fotocopiadora .fotocopiadora_titles p {
     width: 35%;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  #fotocopiadora .fotocopiadora_content span h3 {
     font-size: 2rem;
     line-height: 2rem;
   }

@@ -152,7 +152,8 @@ body{
 }
 // fin header
 #boxTrucho{
-    min-height: 76.65px;
+    min-height: 71.21px;
+    // min-height: 76.65px;
     padding: 5px 0;
     width: 100%;
 }
@@ -223,6 +224,7 @@ body{
             text-transform: uppercase;
             text-align: center;
             line-height: 3rem;
+            margin: 0 5px;
             margin-bottom: 10px;
            }
        } 
@@ -244,48 +246,48 @@ body{
        }
        & #mesas{
            position: relative;
-           background-image: url(./img/mesas.jpg);
+           background-image: url(./img/examenes.jpg);
                background-size: cover;
                background-position: top center;
            &::after{
                content: '';
-               opacity: .2;
+               opacity: .6;
                display: block;
                width: 100%;
                height: 100%;
                position: absolute;
                left: 0;
                top: 0;
-               background-color: $bg-blue;
+               background-color: $bg-3;
            }
        }
        & #formularios{
-           background-image: url(./img/FORMULARIOS.jpg);
+           background-image: url(./img/formularios.jpg);
            background-size: cover;
            background-position: top center;
            position: relative;
            &::after{
             content: '';
             background-color: $bg-2;
-            opacity: .2;
+            opacity: .6;
             display: block;
             width: 100%;
             height: 100%;
             position: absolute;
             left: 0;
             top: 0;
-            
+            background-color: $bg-3;
         }
        }
        & #propuestas{
            position: relative;
-           background-image: url(./img/PROPUESTAS.jpg);
+           background-image: url(./img/Ingresantes.jpg);
            background-size: cover;
-           background-position: top right;
+        //    background-position: top right;
            &::after{
             background-color: $bg-3;
             content: '';
-            opacity: .5;
+            opacity: .6;
             display: block;
             width: 100%;
             height: 100%;
@@ -517,7 +519,7 @@ body{
             height: 80px;
             // margin: 0px 2px;
             padding: 10px;
-            & a:hover img{
+            &:hover img{
                 transition: 0.5s;
                 transform: scale(1.1);
             }
@@ -772,19 +774,17 @@ body{
                     justify-content: flex-start;
                 }
                 & h3{
-                    font-size: 1.5rem;
-                    line-height: 1.5rem;
-                    font-weight: 700;
+                    font-size: 1.3rem;
+                    line-height: 1.3rem;
+                    font-weight: 500;
                     color: white;
-                    padding: 10px 0;
-                    // margin: 0 10px;
-                    margin-left: 10px;
-                    // margin-bottom: 10px;
+                    margin-left: 5px;
                 }
                 & a{
                     text-decoration: none;
                     font-size: 1.15rem;
                     font-weight: 700;
+                    color: $bg-blue;
                     // margin-top: 30px;
                     background-color: $bg-header;
                     padding: 7px;
@@ -800,13 +800,16 @@ body{
                         transition: 0.3s;
                     }
                 }
+                & .horario{
+                    font-weight: 700;
+                }
                 & h4{
-                    font-size: 1.2rem;
-                    line-height: 1.2rem;
-                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                    font-weight: 700;
                     color: white;
-                    margin-left: 5px;
-                    // padding: 10px 0;
+                    padding: 10px 0;
+                    margin-left: 10px;
                 }
             }
         }  
@@ -1154,6 +1157,10 @@ body{
     }
     #fotocopiadora .fotocopiadora_titles p{
         width: 35%;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    #fotocopiadora .fotocopiadora_content span h3{
         font-size: 2rem;
         line-height: 2rem;
     }
