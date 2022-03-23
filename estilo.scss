@@ -422,7 +422,7 @@ body{
                 font-weight: 500;
                 transition: all 0.2s ease;
                 text-decoration: none;
-                margin-left: 5px;
+                margin-left: 15px;
                 width: 100%;
                 }
         &:hover{
@@ -647,7 +647,7 @@ body{
             font-size: 1.7rem;
             font-weight: 500;
             padding: 5px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         & option{
             display: block;
             color: black;
@@ -666,7 +666,7 @@ body{
         & .nombres{
             visibility: hidden;
             &.active{
-                margin-top: 20px;
+                margin-top: 50px;
                 padding: 20px;
                 width: 70%;
                 height: auto;
@@ -916,8 +916,9 @@ body{
                             font-weight: 500;
                             transition: all 0.2s ease;
                             text-decoration: none;
-                            margin-left: 5px;
+                            margin-left: 15px;
                             width: 100%;
+                            padding: 0;
                             }
                     &:hover{
                         width: 100%;

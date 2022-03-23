@@ -566,7 +566,7 @@ body {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   text-decoration: none;
-  margin-left: 5px;
+  margin-left: 15px;
   width: 100%;
 }
 
@@ -888,7 +888,7 @@ body {
   font-size: 1.7rem;
   font-weight: 500;
   padding: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #ayudantes .ayudantes #selectBox .select option {
@@ -912,7 +912,7 @@ body {
 }
 
 #ayudantes .ayudantes .nombres.active {
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 20px;
   width: 70%;
   height: auto;
@@ -1249,8 +1249,9 @@ body {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   text-decoration: none;
-  margin-left: 5px;
+  margin-left: 15px;
   width: 100%;
+  padding: 0;
 }
 
 #estudiantil .estudiantil_box_single--content ul li:hover {
