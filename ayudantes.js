@@ -112,16 +112,18 @@ arrayMaterias.forEach((value) => {
                     <option class="optionCatedra" value="${value.nombre}">Cátedra ${value.catedra} -> Ayudante: ${value.nombre}</option>
                     `
                 })
+                cargarNombres()
                 if (e.target.value == 'Materia') {
                     selectCatedra.innerHTML = ''
                     nombres.innerHTML = ''
                     nombres.classList.remove('active')
                 // }
-                cargarNombres()
+                // cargarNombres()
             }
         })
     }
      const cargarNombres = () => {
+         
         selectCatedra.addEventListener('click', (e) => {
             let nombre = newArray.filter((el) => el.nombre == e.target.value)
             for (const item of nombre) {

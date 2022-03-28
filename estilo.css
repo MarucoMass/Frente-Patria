@@ -684,6 +684,13 @@ body {
           transform: scale(1.1);
 }
 
+#videoteca .videoteca_contenedorBtn--box:focus img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 #videoteca .videoteca_contenedorBtn--box img {
   background: none;
   border: none;
@@ -1003,6 +1010,7 @@ body {
   padding: 0 5px;
   color: white;
   margin: 0 10px;
+  max-width: 300px;
 }
 
 #fotocopiadora .fotocopiadora_content {
@@ -1023,7 +1031,7 @@ body {
 }
 
 #fotocopiadora .fotocopiadora_content span {
-  width: 80%;
+  max-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
