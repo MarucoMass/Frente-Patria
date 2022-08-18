@@ -151,12 +151,14 @@ body{
   }
 }
 // fin header
-#boxTrucho{
+// /////////////////////////////////////
+#fakeBox{
     min-height: 71.21px;
     // min-height: 76.65px;
     padding: 5px 0;
     width: 100%;
 }
+// /////////////////////////////////////
 // home
 #home{
     width: 100%;
@@ -301,6 +303,7 @@ body{
   }
 
 // fin home
+// /////////////////////////////////////
 // biblioteca
 #biblioteca{
     width: 100%;
@@ -452,6 +455,7 @@ body{
 }
 }
 //fin biblioteca
+// /////////////////////////////////////
 // videoteca
 #videoteca{
     width: 100%;
@@ -612,6 +616,7 @@ body{
 }
 }
 // fin videoteca
+// /////////////////////////////////////
 // ayudantes
 #ayudantes{
     width: 100%;
@@ -692,6 +697,7 @@ body{
     }
 }
 // fin ayudantes
+// /////////////////////////////////////
 // fotocopiadora
 #fotocopiadora{
     width: 100%;
@@ -711,9 +717,7 @@ body{
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-            // margin: 0 auto;
             margin-bottom: 30px;
-            // 
             max-width: 1200px;
             & h2{
                 display: inline-block;
@@ -723,13 +727,10 @@ body{
                 text-transform: uppercase;
                 text-align: center;
                 line-height: 3rem;
-                // padding: 33px 0 0 0;
                 padding: 30px;
                 margin-top: 10px;
             }
             & p{
-                // width: 100%;
-                // margin: 0 auto;
                 font-size: 1.5rem;
                 font-weight: 500;
                 line-height: 1.5rem;
@@ -941,6 +942,7 @@ body{
     }
 }
 // fin estudiantil
+// /////////////////////////////////////
 // footer
 #footer{
     background-color: $bg-darkBlue; 
@@ -1037,9 +1039,6 @@ body{
         font-size: 6rem;
         line-height: 6rem;  
     }
-    // .home .home_boxes_title h2{
-    //     width: 1200px;
-    // }
     // biblio
     #biblioteca .biblioteca #biblioteca_title{
         position: relative;
