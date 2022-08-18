@@ -35,7 +35,7 @@ Cuenta con un form select para elegir a los ayudantes.
 Cuenta con menú acordeón que despliega la info elegida.
 <img width="946" alt="info" src="https://user-images.githubusercontent.com/93622442/185298391-25723f8c-d085-4458-8007-ef6a8fde45b0.png">
 
-## Dependencias y tecnologías del proyecto:
+## Tecnologías del proyecto:
 - HTML para darle estructura.
 - Sass para dar estilo.
 - Javascript para darle dinamismo.
