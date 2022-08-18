@@ -29,7 +29,7 @@ Cuenta con botones que despliegan las materias del año elegido.
 
 ### Ayudantes
 Cuenta con un form select para elegir a los ayudantes.
-<img width="947" alt="ayudantes" src="https://user-images.githubusercontent.com/93622442/185298296-8751f23b-42f0-48e2-81d8-3074ee193d60.png">
+<img width="949" alt="ayudantes" src="https://user-images.githubusercontent.com/93622442/185337199-306c54e2-fe93-443b-bf89-3c2f36f801f0.png">
 
 ### Información estudiantil
 Cuenta con menú acordeón que despliega la info elegida.
