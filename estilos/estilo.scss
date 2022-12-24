@@ -165,7 +165,6 @@ body{
     overflow: hidden;
     position: relative;
     & #boxBotones{
-        // margin: 0 auto;
         width: 100%;
         height: auto;
         padding: 0 10px;
@@ -177,12 +176,10 @@ body{
         justify-content: space-between;
         align-items: center;
         z-index: 2;
-        // max-width: 500px;
         & #leftBtn{
             font-size: 4rem;
             font-weight: 700;
             color: white;
-            // border-radius: 10%;
             width: 25px;
             padding: 0 15px;
             background-color: transparent;
@@ -202,7 +199,6 @@ body{
         }
     }
     & .home{
-        // margin-top: 8vh;
         position: relative;
         // overflow: hidden;
         flex-direction: row;
@@ -228,7 +224,6 @@ body{
             line-height: 3rem;
             margin: 0 25px;
             margin-bottom: 10px;
-            // width: 320px;
            }
        } 
        & a{
@@ -265,7 +260,7 @@ body{
            }
        }
        & #formularios{
-           background-image: url(./img/formularios.jpg);
+           background-image: url(../img/formularios.jpg);
            background-size: cover;
            background-position: top center;
            position: relative;
@@ -284,7 +279,7 @@ body{
        }
        & #propuestas{
            position: relative;
-           background-image: url(./img/Ingresantes.jpg);
+           background-image: url(../img/Ingresantes.jpg);
            background-size: cover;
         //    background-position: top right;
            &::after{
@@ -310,7 +305,7 @@ body{
     background-color: $bg-blue;
     padding: 30px 0;
     position: relative;
-    background-image: url(./img/biblio.png);
+    background-image: url(../img/biblio.png);
     background-size: cover;
     background-position-x: 5%;
 & .biblioteca{
@@ -459,7 +454,7 @@ body{
 // videoteca
 #videoteca{
     width: 100%;
-    background-image: url(./img/videoteca.png);
+    background-image: url(../img/videoteca.png);
     background-size: cover;
     background-position-x: 22%;
     // padding: 0px 0 10px 0;
@@ -621,7 +616,7 @@ body{
 #ayudantes{
     width: 100%;
     padding: 20px 0;
-    background-image: url(./img/ayudantes.png);
+    background-image: url(../img/ayudantes.png);
     background-size: cover;
    & .ayudantes{
     flex-direction: column;
@@ -702,7 +697,7 @@ body{
 #fotocopiadora{
     width: 100%;
     padding: 20px 0;
-    background-image: url(./img/FOTOCOP-vertical.png);
+    background-image: url(../img/FOTOCOP-vertical.png);
     background-position-x: 55%;
     background-size: cover;
     transition: 0.2s;
@@ -808,7 +803,7 @@ body{
 // estudiantil
 #estudiantil{
     width: 100%;
-    background-image: url(./img/otro-fondo.png);
+    background-image: url(../img/otro-fondo.png);
     background-size: cover;
     background-position-x: 3%;
     overflow: hidden;
@@ -1095,7 +1090,7 @@ body{
     }
     // fotocopiadora
     #fotocopiadora{
-        background-image: url(./img/FOTOCOP.png);
+        background-image: url(../img/FOTOCOP.png);
         background-size: cover;
     }
     #fotocopiadora .fotocopiadora_titles h2{

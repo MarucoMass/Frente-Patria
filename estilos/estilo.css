@@ -324,7 +324,7 @@ body {
 
 #home .home #mesas {
   position: relative;
-  background-image: url(./img/examenes.jpg);
+  background-image: url(../img/examenes.jpg);
   background-size: cover;
   background-position: top center;
 }
@@ -342,7 +342,7 @@ body {
 }
 
 #home .home #formularios {
-  background-image: url(./img/formularios.jpg);
+  background-image: url(../img/formularios.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -363,7 +363,7 @@ body {
 
 #home .home #propuestas {
   position: relative;
-  background-image: url(./img/Ingresantes.jpg);
+  background-image: url(../img/Ingresantes.jpg);
   background-size: cover;
 }
 
@@ -384,7 +384,7 @@ body {
   background-color: #0455BF;
   padding: 30px 0;
   position: relative;
-  background-image: url(./img/biblio.png);
+  background-image: url(../img/biblio.png);
   background-size: cover;
   background-position-x: 5%;
 }
@@ -596,7 +596,7 @@ body {
 
 #videoteca {
   width: 100%;
-  background-image: url(./img/videoteca.png);
+  background-image: url(../img/videoteca.png);
   background-size: cover;
   background-position-x: 22%;
 }
@@ -840,7 +840,7 @@ body {
 #ayudantes {
   width: 100%;
   padding: 20px 0;
-  background-image: url(./img/ayudantes.png);
+  background-image: url(../img/ayudantes.png);
   background-size: cover;
 }
 
@@ -951,7 +951,7 @@ body {
 #fotocopiadora {
   width: 100%;
   padding: 20px 0;
-  background-image: url(./img/FOTOCOP-vertical.png);
+  background-image: url(../img/FOTOCOP-vertical.png);
   background-position-x: 55%;
   background-size: cover;
   -webkit-transition: 0.2s;
@@ -1108,7 +1108,7 @@ body {
 
 #estudiantil {
   width: 100%;
-  background-image: url(./img/otro-fondo.png);
+  background-image: url(../img/otro-fondo.png);
   background-size: cover;
   background-position-x: 3%;
   overflow: hidden;
@@ -1482,7 +1482,7 @@ body {
     line-height: 6rem;
   }
   #fotocopiadora {
-    background-image: url(./img/FOTOCOP.png);
+    background-image: url(../img/FOTOCOP.png);
     background-size: cover;
   }
   #fotocopiadora .fotocopiadora_titles h2 {
