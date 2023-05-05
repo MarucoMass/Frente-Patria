@@ -44,7 +44,7 @@ Cuenta con menú acordeón que despliega la info elegida.
 https://marucomass.github.io/Frente-Patria/
 
 ### Frente Patria. Link del sitio del cliente: 
-https://www.frentepatriafder.com/
+https://www.frentepatriafder.net/
 
 ### Autor: Mario Massonnat - [MarucoMass](https://github.com/MarucoMass)
 
